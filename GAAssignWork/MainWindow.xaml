@@ -1,0 +1,39 @@
+﻿<Window x:Class="GAAssignWork.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GAAssignWork"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="451.067" Width="750.8">
+    <Grid>
+        <GroupBox Header="Works" Height="219" Margin="10,10,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="359">
+            <Grid Margin="0,0,-2,-12">
+                <DataGrid x:Name="WorkDataGrid" ColumnWidth="*" Margin="10,34,10,21"/>
+                <Button x:Name="CreateWorkButton" Content="Create" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="160"/>
+                <Button x:Name="DeleteWorkButton" Content="Delete" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Width="160"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Employee" Height="219" Margin="0,10,10,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="359">
+            <Grid Margin="0,0,-2,-12">
+                <DataGrid x:Name="EmployeeDataGrid" ColumnWidth="*" Margin="10,34,10,21"/>
+                <Button x:Name="CreateEmployeeButton" Content="Create" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="160"/>
+                <Button x:Name="DeleteEmployeeButton" Content="Delete" HorizontalAlignment="Left" Margin="179,10,0,0" VerticalAlignment="Top" Width="160"/>
+            </Grid>
+        </GroupBox>
+        <GroupBox Header="Assignment" Margin="10,229,10,0" Height="179" VerticalAlignment="Top">
+            <Grid Margin="0,0,-2,-12">
+                <DataGrid x:Name="AssignmentDataGrid" ColumnWidth="*" Margin="231,10,10,0" Height="134" VerticalAlignment="Top"/>
+                <Button x:Name="AssignButton" Content="Assign" Margin="0,112,487,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="216" Height="32"/>
+                <Label Content="LoopCount" HorizontalAlignment="Left" Margin="10,7,0,0" VerticalAlignment="Top"/>
+                <TextBox Name="LoopCountText" Text="10000" HorizontalAlignment="Left" Height="19" Margin="106,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="PoolSize" HorizontalAlignment="Left" Margin="10,32,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="PoolSizeText" Text="100" HorizontalAlignment="Left" Height="19" Margin="106,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="SelectCount" HorizontalAlignment="Left" Margin="10,57,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="SelectCountText" Text="20" HorizontalAlignment="Left" Height="19" Margin="106,58,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+                <Label Content="TerminateValue" HorizontalAlignment="Left" Margin="10,82,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="TerminateValueText" Text="1"  HorizontalAlignment="Left" Height="19" Margin="106,82,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+            </Grid>
+        </GroupBox>
+    </Grid>
+</Window>
